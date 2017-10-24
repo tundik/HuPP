@@ -145,7 +145,8 @@ ind2word = {index: word for index, word in enumerate(word2ind)}
 #FULLSTOP=PERIOD
 labels = ['O','COMMA','FULLSTOP']
 if no_question==0:
-	labels.append('QUESTION','EXCLAMATION')
+	labels.append('QUESTION')
+	labels.append('EXCLAMATION')
 label2ind = {label: (index + 1) for index, label in enumerate(labels)}
 ind2label = {(index + 1): label for index, label in enumerate(labels)}
 
